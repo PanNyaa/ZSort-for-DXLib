@@ -65,7 +65,7 @@ DXライブラリ用のZソート風画像表示の実装＆ちょっとした�
                     
                     int DrawGraph(int x,int y,int GrHandle,int TransFlag ,int BlendMode,int alpha);
                     
-                   (で、その画像ハンドルに対してのみブレンドモードの指定ができます。
+                    (で、その画像ハンドルに対してのみブレンドモードの指定ができます。
                     
                     DrawGraph(0,0,GrHandle,TRUE,DX_BLENDMODE_ALPHA,128);
                     
