@@ -44,7 +44,9 @@ DXライブラリ用のZソート風画像表示の実装＆ちょっとした�
           
           ・マスク機能
                     (CreateMaskScreen();をしてからの、
-                    (SetUseMaskScreenFlag(1);～SetUseMaskScreenFlag(0);の間でDrawMask→DrawGraphをしてもマスク処理が適用されない
+                    (SetUseMaskScreenFlag(1);～SetUseMaskScreenFlag(0);の間で、
+					(DrawMask→DrawGraphをしても、マスク処理が適用されない
+					
                     (理由は、DrawGraphをしたときに画像関連データを次々と保持するだけで表示自体はせず、
                     (メインループ終端でまとめて表示しているため、
                     (SetUseMaskScreenFlag(1);～SetUseMaskScreenFlag(0);の適用圏内に入らない
@@ -57,7 +59,8 @@ DXライブラリ用のZソート風画像表示の実装＆ちょっとした�
                     DrawGraph(0,0,GrHandle,TRUE);
                     SetDrawBlendMode(DX_BLENDMODE_NOBLEND,0);
                     
-                    (という画像表示をすると半透明のGrHandleが描画されますが、マスクが適用されないのと同じ理由で適用されません。
+                    (という画像表示をすると半透明のGrHandleが描画されますが、
+					(マスクが適用されないのと同じ理由で適用されません。
                     (しかし、DrawGraphの引数が6つある、
                     
                     int DrawGraph(int x,int y,int GrHandle,int TransFlag ,int BlendMode,int alpha);
