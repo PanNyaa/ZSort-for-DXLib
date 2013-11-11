@@ -13,9 +13,9 @@ DXライブラリ用のZソート風画像表示の実装＆ちょっとした�
 .
 
 
-          SetDrawBlendMode(DX_BLENDMODE_ALPHA,128);
-          DrawGraph(0,0,GrHandle,TRUE);
-          SetDrawBlendMode(DX_BLENDMODE_NOBLEND,0);
+          
+          
+          
           
           --使い方
           
